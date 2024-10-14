@@ -1,0 +1,84 @@
+@import './base.css';
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* เปลี่ยนฟอนต์ */
+  background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลัง */
+  color: #333; /* เปลี่ยนสีข้อความ */
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  border-radius: 10px; /* เพิ่มมุมมน */
+  background-color: #ffffff; /* สีพื้นหลังของส่วนแอป */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+header {
+  background-color: #ffffff; /* สีพื้นหลังของ header */
+  padding: 1rem; /* ระยะห่างใน header */
+  border-radius: 10px 10px 0 0; /* มุมมนบน */
+  color: rgb(0, 0, 0); /* สีข้อความใน header */
+}
+
+.wrapper {
+  display: flex; /* ใช้ flexbox */
+  align-items: center; /* จัดกลางแนวตั้ง */
+}
+
+.logo {
+  margin-left: 1rem; /* ระยะห่างจากข้อความ "TV Online" */
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+a:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+h1, h3 {
+  margin: 0; /* ลบ margin เริ่มต้น */
+}
+
+h1 {
+  font-size: 2.5rem; /* ขนาดตัวอักษรใหญ่ */
+  font-weight: bold; /* ตัวหนา */
+}
+
+h3 {
+  font-size: 1.2rem; /* ขนาดตัวอักษรปกติ */
+  margin-top: 0.5rem; /* ระยะห่างด้านบน */
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+.footer {
+  text-align: center; /* จัดกลาง */
+  padding: 1rem; /* ระยะห่าง */
+  background-color: #ffffff; /* สีพื้นหลังของ footer */
+  color: white; /* สีข้อความใน footer */
+  border-radius: 0 0 10px 10px; /* มุมมนล่าง */
+  position: relative; /* ใช้สำหรับการจัดวาง */
+  bottom: 0; /* ให้ footer อยู่ที่ด้านล่าง */
+  width: 100%; /* ให้ footer กว้างเต็มจอ */
+}
